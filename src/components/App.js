@@ -1,13 +1,17 @@
+// App.js
+import React from 'react';
 
-import React from "react";
-import './../styles/App.css';
+const WeatherReport = ({ temperature, conditions }) => {
+  const isAboveThreshold = temperature > 20;
+  const colorStyle = isAboveThreshold ? 'red' : 'blue';
 
-const App = () => {
   return (
-    <div>
-        {/* Do not remove the main div */}
+    <div style={{ color: colorStyle }}>
+      <h1>Weather Report</h1>
+      <p>Temperature: {temperature}°C</p>
+      <p>Conditions: {conditions}</p>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default WeatherReport;
