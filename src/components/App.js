@@ -3,13 +3,13 @@ import React from 'react';
 
 const WeatherReport = ({ temperature, conditions }) => {
   const isAboveThreshold = temperature > 20;
-  const colorStyle = isAboveThreshold ? 'green' : 'blue';
+  const colorStyle = isAboveThreshold ? 'red' : 'blue';
 
   return (
     <div style={{ color: colorStyle }}>
-      <h1>Weather Report</h1>
-      <p>temperature: {temperature}</p>
-      <p>conditions: {conditions}</p>
+      <h1>Conditional Weather Report</h1>
+      <p>Temperature: {temperature}</p>
+      <p>Conditions: {conditions}</p>
     </div>
   );
 };
