@@ -8,8 +8,8 @@ const WeatherReport = ({ temperature, conditions }) => {
   return (
     <div style={{ color: colorStyle }}>
       <h1>Weather Report</h1>
-      <p>Temperature: {temperature}</p>
-      <p>Conditions: {conditions}</p>
+      <p>temperature: {temperature}</p>
+      <p>conditions: {conditions}</p>
     </div>
   );
 };
