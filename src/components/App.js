@@ -35,7 +35,7 @@ function WeatherApp({ weather }) {
 }
 
 function App() {
-  const weatherInput = { temperature: 25, conditions: "Sunny" };
+  const weatherInput = { Temperature: 25, conditions: "Sunny" };
 
   return (
     <div className="App">
