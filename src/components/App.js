@@ -28,7 +28,7 @@ function WeatherApp({ weather }) {
         Current Temperature: {weather.temperature}°C
       </div>
       <div className="conditions">
-        Weather Conditions: {weather.conditions}
+       <p>Weather Conditions: {weather.conditions}</p> 
       </div>
     </div>
   );
