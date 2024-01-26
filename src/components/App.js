@@ -23,7 +23,7 @@ function WeatherApp({ weather }) {
 
   return (
     <div className="weather-container">
-      <h2>Weather Report</h2>
+      <h2>Conditional Weather Report</h2>
       <div className="temperature" style={{ color: temperatureColor }}>
         Current Temperature: {weather.temperature}°C
       </div>
